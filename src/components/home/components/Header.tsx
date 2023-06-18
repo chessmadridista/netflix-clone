@@ -1,6 +1,7 @@
 import { ArrowDropDown, Language } from "@mui/icons-material";
 import { AppBar, MenuItem, Select, Toolbar, SelectChangeEvent, InputAdornment, Button } from "@mui/material";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header(): JSX.Element {
     const [language, setLanguage] = useState<string>('English');
@@ -28,12 +29,14 @@ function Header(): JSX.Element {
                     <MenuItem value='English'>English</MenuItem>
                     <MenuItem value='Hindi'>Hindi</MenuItem>
                 </Select>
-                <Button
-                    variant="contained"
-                    sx={{ marginLeft: 2, backgroundColor: '#e50914', textTransform: 'none', fontWeight: 'bold', ":hover": {backgroundColor: '#bf0811'}, }}
-                >
-                    Sign in
-                </Button>
+                <Link to='/login'>
+                    <Button
+                        variant="contained"
+                        sx={{ marginLeft: 2, backgroundColor: '#e50914', textTransform: 'none', fontWeight: 'bold', ":hover": {backgroundColor: '#bf0811'}, }}
+                    >
+                        Sign in
+                    </Button>
+                </Link>
             </Toolbar>
         </AppBar>
     );
