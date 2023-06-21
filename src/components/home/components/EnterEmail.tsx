@@ -36,10 +36,13 @@ function EnterEmail(): JSX.Element {
                                 ":hover": {backgroundColor: '#bf0811'},
                                 height: 55,
                                 width: 180,
-                                marginLeft: 1
+                                marginLeft: 1,
+                                fontWeight: 'bold',
+                                fontSize: 'large',
+                                textTransform: 'none'
                             }}
                         >
-                            Get started<ChevronRight />
+                            Get Started<ChevronRight />
                         </Button>
                     </div>
                 </CardContent>
