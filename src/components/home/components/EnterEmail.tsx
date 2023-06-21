@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, Typography } from "@mui/material";
+import { Button, Card, CardContent, CardHeader, TextField, Typography } from "@mui/material";
 
 function EnterEmail(): JSX.Element {
     return (
@@ -21,6 +21,23 @@ function EnterEmail(): JSX.Element {
                     <Typography variant="h6">
                         Ready to watch? Enter your email to create or restart your membership.
                     </Typography>
+                    <div style={{marginTop: 30}}>
+                        <TextField 
+                            label='Email address' 
+                            InputLabelProps={{
+                                style: { color: '#aaa' }
+                            }}
+                            sx={{background: 'rgba(0, 0, 0, 0.7)', border: '1px solid #777', borderRadius: 2, width: '400px'}} />
+                        <Button 
+                            variant="contained" 
+                            sx={{
+                                backgroundColor: '#e50914', 
+                                ":hover": {backgroundColor: '#bf0811'}
+                            }}
+                        >
+                            Get started
+                        </Button>
+                    </div>
                 </CardContent>
             </Card>
         </>
