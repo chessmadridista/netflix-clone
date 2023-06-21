@@ -1,5 +1,6 @@
 import { ArrowCircleRight, ArrowRight, ArrowRightAlt, ArrowRightOutlined, ArrowRightSharp, ChevronRight } from "@mui/icons-material";
 import { Button, Card, CardContent, CardHeader, TextField, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function EnterEmail(): JSX.Element {
     return (
@@ -7,7 +8,6 @@ function EnterEmail(): JSX.Element {
             <img src="src/assets/EnterEmail.jpg" alt="Enter email background image." style={{ position: 'absolute', height: '100%', width: '100%', opacity: '0.6', filter: 'blur(1px)'}} />
             <Card sx={{position: 'relative', height: '100vh', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', color: '#fff'}}>
                 <CardHeader 
-                    // title='Unlimited movies, TV shows and more' 
                     title={
                         <Typography variant="h3" sx={{fontWeight: 'bold', marginTop: 10}}>
                             Unlimited movies, TV shows and more
@@ -29,21 +29,23 @@ function EnterEmail(): JSX.Element {
                                 style: { color: '#aaa' }
                             }}
                             sx={{background: 'rgba(0, 0, 0, 0.7)', border: '1px solid #777', borderRadius: 2, width: '400px'}} />
-                        <Button 
-                            variant="contained" 
-                            sx={{
-                                backgroundColor: '#e50914', 
-                                ":hover": {backgroundColor: '#bf0811'},
-                                height: 55,
-                                width: 180,
-                                marginLeft: 1,
-                                fontWeight: 'bold',
-                                fontSize: 'large',
-                                textTransform: 'none'
-                            }}
-                        >
-                            Get Started<ChevronRight />
-                        </Button>
+                        <Link to='/signup'>
+                            <Button 
+                                variant="contained" 
+                                sx={{
+                                    backgroundColor: '#e50914', 
+                                    ":hover": {backgroundColor: '#bf0811'},
+                                    height: 55,
+                                    width: 180,
+                                    marginLeft: 1,
+                                    fontWeight: 'bold',
+                                    fontSize: 'large',
+                                    textTransform: 'none'
+                                }}
+                            >
+                                Get Started<ChevronRight />
+                            </Button>
+                        </Link>
                     </div>
                 </CardContent>
             </Card>
