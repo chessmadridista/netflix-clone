@@ -28,7 +28,7 @@ function Header(): JSX.Element {
                     id='language'
                     value={language}
                     onChange={changeLanguage}
-                    sx={{ height: 40, marginLeft: 70, color: '#fff', border: '1px solid #555' }}
+                    sx={{ height: 40, marginLeft: 80, color: '#fff', border: '1px solid #555' }}
                 >
                     <MenuItem value='English'>English</MenuItem>
                     <MenuItem value='Hindi'>Hindi</MenuItem>
@@ -36,7 +36,7 @@ function Header(): JSX.Element {
                 <Link to='/login'>
                     <Button
                         variant="contained"
-                        sx={{ marginLeft: 2, backgroundColor: '#e50914', textTransform: 'none', fontWeight: 'bold', ":hover": {backgroundColor: '#bf0811'}, }}
+                        sx={{ marginLeft: 4, backgroundColor: '#e50914', textTransform: 'none', fontWeight: 'bold', ":hover": {backgroundColor: '#bf0811'}, }}
                     >
                         Sign in
                     </Button>
