@@ -11,12 +11,16 @@ function Header(): JSX.Element {
     }
 
     return (
-        <AppBar sx={{ backgroundColor: 'black' }}>
+        <AppBar position='fixed' sx={{ backgroundColor: 'rgba(0, 0, 0, 0.8)', }}>
             <Toolbar>
                 <img 
                     src="src/assets/netflix logo.png" 
                     alt="Netflix logo."
-                    style={{ width: 200, height: 80, objectFit: 'cover', marginLeft: '120px' }}
+                    style={{ 
+                        paddingTop: 15,
+                        paddingBottom: 15,
+                        height: 40, 
+                        marginLeft: '120px' }}
                 />
                 <Select
                     startAdornment={<InputAdornment position='start' sx={{ color: '#fff' }}><Language /></InputAdornment>}
@@ -24,7 +28,7 @@ function Header(): JSX.Element {
                     id='language'
                     value={language}
                     onChange={changeLanguage}
-                    sx={{ height: 40, marginLeft: 70, color: '#fff', border: '1px solid #555' }}
+                    sx={{ height: 40, marginLeft: 80, color: '#fff', border: '1px solid #555' }}
                 >
                     <MenuItem value='English'>English</MenuItem>
                     <MenuItem value='Hindi'>Hindi</MenuItem>
@@ -32,7 +36,7 @@ function Header(): JSX.Element {
                 <Link to='/login'>
                     <Button
                         variant="contained"
-                        sx={{ marginLeft: 2, backgroundColor: '#e50914', textTransform: 'none', fontWeight: 'bold', ":hover": {backgroundColor: '#bf0811'}, }}
+                        sx={{ marginLeft: 4, backgroundColor: '#e50914', textTransform: 'none', fontWeight: 'bold', ":hover": {backgroundColor: '#bf0811'}, }}
                     >
                         Sign in
                     </Button>
