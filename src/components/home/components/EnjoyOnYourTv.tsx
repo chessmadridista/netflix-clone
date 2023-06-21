@@ -1,4 +1,4 @@
-import { Card, CardHeader, Typography } from "@mui/material";
+import { Card, CardHeader, CardMedia, Typography } from "@mui/material";
 
 function EnjoyOnYourTv(): JSX.Element {
     return (
@@ -15,6 +15,11 @@ function EnjoyOnYourTv(): JSX.Element {
                     </Typography>
                 }
             
+            />
+            <CardMedia 
+            component='img'
+            height='300'
+            src="src/assets/tv.png"
             />
         </Card>
     );
