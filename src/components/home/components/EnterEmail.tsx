@@ -9,7 +9,7 @@ function EnterEmail(): JSX.Element {
             <Card sx={{position: 'relative', height: '100vh', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent', color: '#fff'}}>
                 <CardHeader 
                     title={
-                        <Typography variant="h3" sx={{fontWeight: 'bold', marginTop: 10}}>
+                        <Typography variant="h3" sx={{fontWeight: 'bolder', marginTop: 10}}>
                             Unlimited movies, TV shows and more
                         </Typography>
                     }
