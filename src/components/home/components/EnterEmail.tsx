@@ -8,12 +8,12 @@ function EnterEmail(): JSX.Element {
                 <CardHeader 
                     // title='Unlimited movies, TV shows and more' 
                     title={
-                        <Typography variant="h3" sx={{fontWeight: 'bold'}}>
+                        <Typography variant="h3" sx={{fontWeight: 'bold', marginTop: 10}}>
                             Unlimited movies, TV shows and more
                         </Typography>
                     }
                     subheader={
-                    <Typography variant="h5" color="#fff">
+                    <Typography variant="h5" color="#fff" sx={{marginTop: 1.5}}>
                         Watch anywhere. Cancel anytime.
                     </Typography>
                 } />
