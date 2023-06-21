@@ -20,7 +20,7 @@ function EnjoyOnYourTv(): JSX.Element {
                 <CardMedia 
                 component='img'
                 src="src/assets/tv.png"
-                sx={{position: 'relative', width: 600, zIndex: '20000000000'}}
+                sx={{position: 'relative', width: 600, zIndex: '1'}}
                 />
                 <video autoPlay playsInline muted loop style={{width: 425, position: 'absolute', top: '22%', left: '14%'}}>
                     <source src="src/assets/tv netflix demo.m4v" type="video/mp4" />
