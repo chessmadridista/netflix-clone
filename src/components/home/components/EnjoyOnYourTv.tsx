@@ -2,7 +2,7 @@ import { Card, CardHeader, CardMedia, Typography } from "@mui/material";
 
 function EnjoyOnYourTv(): JSX.Element {
     return (
-        <Card sx={{marginTop: 1, paddingLeft: 5, backgroundColor: '#000', color: '#fff', height: '100vh', display: 'flex', }}>
+        <Card sx={{position: 'relative', marginTop: 1, paddingLeft: 5, backgroundColor: '#000', color: '#fff', height: '100vh', display: 'flex', }}>
             <CardHeader 
                 title={
                     <Typography variant="h3" sx={{fontWeight: 'bolder'}}>
@@ -18,8 +18,8 @@ function EnjoyOnYourTv(): JSX.Element {
             />
             <CardMedia 
             component='img'
-            height='300'
             src="src/assets/tv.png"
+            sx={{width: 600, position: 'absolute', top: '50%', left: '50%', transform: 'translateY(-50%)'}}
             />
         </Card>
     );
