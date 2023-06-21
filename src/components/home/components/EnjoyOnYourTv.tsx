@@ -14,7 +14,6 @@ function EnjoyOnYourTv(): JSX.Element {
                         Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
                     </Typography>
                 }
-            
             />
             <div style={{position: 'absolute', top: '50%', left: '50%', transform: 'translateY(-50%)'}}>
                 <CardMedia 
