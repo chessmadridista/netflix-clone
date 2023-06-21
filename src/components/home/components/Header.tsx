@@ -11,12 +11,16 @@ function Header(): JSX.Element {
     }
 
     return (
-        <AppBar position='fixed' sx={{ backgroundColor: 'black',  }}>
+        <AppBar position='fixed' sx={{ backgroundColor: 'rgba(0, 0, 0, 0.8)', }}>
             <Toolbar>
                 <img 
                     src="src/assets/netflix logo.png" 
                     alt="Netflix logo."
-                    style={{ width: 200, height: 80, objectFit: 'cover', marginLeft: '120px' }}
+                    style={{ 
+                        paddingTop: 15,
+                        paddingBottom: 15,
+                        height: 40, 
+                        marginLeft: '120px' }}
                 />
                 <Select
                     startAdornment={<InputAdornment position='start' sx={{ color: '#fff' }}><Language /></InputAdornment>}
