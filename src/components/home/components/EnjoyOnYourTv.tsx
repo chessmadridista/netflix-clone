@@ -21,6 +21,9 @@ function EnjoyOnYourTv(): JSX.Element {
             src="src/assets/tv.png"
             sx={{width: 600, position: 'absolute', top: '50%', left: '50%', transform: 'translateY(-50%)'}}
             />
+            <video autoPlay style={{width: 470, marginLeft: 180}}>
+                <source src="src/assets/tv netflix demo.m4v" />
+            </video>
         </Card>
     );
 }
