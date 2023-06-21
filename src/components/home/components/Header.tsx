@@ -11,7 +11,7 @@ function Header(): JSX.Element {
     }
 
     return (
-        <AppBar position='fixed' sx={{ backgroundColor: 'black' }}>
+        <AppBar position='fixed' sx={{ backgroundColor: 'black',  }}>
             <Toolbar>
                 <img 
                     src="src/assets/netflix logo.png" 
