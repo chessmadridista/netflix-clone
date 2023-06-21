@@ -1,3 +1,4 @@
+import { ArrowCircleRight, ArrowRight, ArrowRightAlt, ArrowRightOutlined, ArrowRightSharp, ChevronRight } from "@mui/icons-material";
 import { Button, Card, CardContent, CardHeader, TextField, Typography } from "@mui/material";
 
 function EnterEmail(): JSX.Element {
@@ -32,10 +33,13 @@ function EnterEmail(): JSX.Element {
                             variant="contained" 
                             sx={{
                                 backgroundColor: '#e50914', 
-                                ":hover": {backgroundColor: '#bf0811'}
+                                ":hover": {backgroundColor: '#bf0811'},
+                                height: 55,
+                                width: 180,
+                                marginLeft: 1
                             }}
                         >
-                            Get started
+                            Get started<ChevronRight />
                         </Button>
                     </div>
                 </CardContent>
