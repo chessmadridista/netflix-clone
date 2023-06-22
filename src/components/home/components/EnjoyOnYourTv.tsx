@@ -14,16 +14,17 @@ function EnjoyOnYourTv(): JSX.Element {
                         Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
                     </Typography>
                 }
-            
             />
-            <CardMedia 
-            component='img'
-            src="src/assets/tv.png"
-            sx={{width: 600, position: 'absolute', top: '50%', left: '50%', transform: 'translateY(-50%)'}}
-            />
-            <video autoPlay playsInline muted loop style={{width: 470, marginLeft: 180}}>
-                <source src="src/assets/tv netflix demo.m4v" type="video/mp4" />
-            </video>
+            <div style={{position: 'absolute', top: '50%', left: '50%', transform: 'translateY(-50%)'}}>
+                <CardMedia 
+                component='img'
+                src="src/assets/tv.png"
+                sx={{position: 'relative', maxWidth: 600, zIndex: '1'}}
+                />
+                <video autoPlay playsInline muted loop style={{maxWidth: 425, position: 'absolute', top: '22%', left: '14%'}}>
+                    <source src="src/assets/tv netflix demo.m4v" type="video/mp4" />
+                </video>
+            </div>
         </Card>
     );
 }
