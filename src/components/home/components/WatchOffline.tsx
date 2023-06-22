@@ -21,11 +21,10 @@ function WatchOffline(): JSX.Element {
                             </Typography>
                         }
                         subheader={
-                            <Typography variant="h5" sx={{marginTop: 2, fontWeight: 'bold'}}>
+                            <Typography variant="h5" sx={{marginTop: 2}}>
                                 Save your favourites easily and always have something to watch.
                             </Typography>
                         }
-                        sx={{width: 600, }}
                     />
                 </Card>
             </Grid>
