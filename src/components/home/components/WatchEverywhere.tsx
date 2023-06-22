@@ -20,12 +20,15 @@ function WatchEverywhere(): JSX.Element {
                 </Card>
             </Grid>
             <Grid item xs={6} sx={{display: 'flex', alignItems: 'center'}}>
-                <Card sx={{backgroundColor: '#000',}}>
+                <Card sx={{position: 'relative', backgroundColor: '#000', }}>
                     <CardMedia 
                     component='img'
                     src='src/assets/watch everywhere.png'
+                    sx={{position: 'relative', zIndex: 1}}
                     />
-
+                    <video autoPlay playsInline muted loop style={{maxWidth: 415, position: 'absolute', top: '10%', left: '17%'}}>
+                        <source src="src/assets/tv watch everywhere.m4v" type="video/mp4" />
+                    </video>
                 </Card>
             </Grid>
         </Grid>
