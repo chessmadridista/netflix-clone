@@ -2,7 +2,7 @@ import { Grid, Card, CardHeader, CardMedia, Typography } from "@mui/material";
 
 function WatchEverywhere(): JSX.Element {
     return (
-        <Grid container sx={{paddingLeft: 4, paddingRight: 4, boxSizing: 'border-box', marginTop: 1, backgroundColor: '#000', height: '100vh'}}>
+        <Grid container sx={{paddingLeft: 4, paddingRight: 4, boxSizing: 'border-box', marginTop: 1, backgroundColor: '#000', minHeight: '100vh'}}>
             <Grid item xs={6} sx={{display: 'flex', alignItems: 'center'}}>
                 <Card sx={{color: '#fff', backgroundColor: '#000'}}>
                     <CardHeader

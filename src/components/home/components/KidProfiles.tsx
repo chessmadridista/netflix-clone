@@ -2,7 +2,7 @@ import { Grid, Card, CardHeader, CardMedia, Typography } from "@mui/material";
 
 function KidProfiles(): JSX.Element {
     return (
-        <Grid container sx={{marginTop: 1, backgroundColor: '#000', height: '100vh'}}>
+        <Grid container sx={{marginTop: 1, backgroundColor: '#000', minHeight: '100vh'}}>
             <Grid item xs={6} sx={{display: 'flex', alignItems: 'center'}}>
                 <Card sx={{backgroundColor: '#000',}}>
                     <CardMedia 
