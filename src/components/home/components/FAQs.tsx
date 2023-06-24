@@ -1,4 +1,4 @@
-import { Card, CardHeader, Grid, Typography } from "@mui/material";
+import { Accordion, AccordionSummary, Card, CardContent, CardHeader, Grid, Typography } from "@mui/material";
 
 interface Questions {
     id: number;
@@ -6,7 +6,7 @@ interface Questions {
     answer: string;
 }
 
-function FAQs(): JSX.Element {
+function Questions(): JSX.Element[] {
     const questions: Array<Questions> = [
         {
             id: 0,
@@ -45,7 +45,20 @@ function FAQs(): JSX.Element {
             Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.`,
         },
     ];
+    const questionAccordians = questions.map((question) => {
+        return (
+            <Accordion key={question.id}>
+                <AccordionSummary>
+                    <Typography>{question.question}</Typography>
+                </AccordionSummary>
+            </Accordion>
+        );
+    });
 
+    return questionAccordians;
+}
+
+function FAQs(): JSX.Element {
     return (
         <Grid container sx={{marginTop: 1, background: '#000', color: '#fff', height: '100vh'}}>
             <Grid item sx={{display: 'flex', justifyItems: 'center'}} xs={12}>
@@ -60,6 +73,9 @@ function FAQs(): JSX.Element {
                     } 
                     sx={{color: '#fff', width: '100%'}}
                     />
+                    <CardContent>
+                        <Questions />
+                    </CardContent>
                 </Card>
             </Grid>
         </Grid>
