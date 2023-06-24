@@ -2,10 +2,14 @@ import { Typography, TextField, Button } from "@mui/material";
 import { ChevronRight } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
-function EmailBox(): JSX.Element {
+interface EmailBoxProps {
+    marginTop?: number;
+}
+
+function EmailBox({ marginTop = 0 }: EmailBoxProps): JSX.Element {
     return (
         <>
-            <Typography variant="h6">
+            <Typography variant="h6" sx={{marginTop: marginTop}}>
                 Ready to watch? Enter your email to create or restart your membership.
             </Typography>
             <div style={{marginTop: 15}}>
