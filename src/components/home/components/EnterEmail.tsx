@@ -1,6 +1,4 @@
-import { ChevronRight } from "@mui/icons-material";
-import { Button, Card, CardContent, CardHeader, TextField, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Card, CardContent, CardHeader, Typography } from "@mui/material";
 import EmailBox from "./EmailBox";
 
 function EnterEmail(): JSX.Element {
