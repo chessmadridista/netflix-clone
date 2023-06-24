@@ -1,4 +1,5 @@
-import { Accordion, AccordionSummary, Card, CardContent, CardHeader, Grid, Typography } from "@mui/material";
+import { ExpandMore } from "@mui/icons-material";
+import { Accordion, AccordionDetails, AccordionSummary, Card, CardContent, CardHeader, Grid, Typography } from "@mui/material";
 
 interface Questions {
     id: number;
@@ -47,10 +48,13 @@ function Questions(): JSX.Element[] {
     ];
     const questionAccordians = questions.map((question) => {
         return (
-            <Accordion key={question.id}>
-                <AccordionSummary>
-                    <Typography>{question.question}</Typography>
+            <Accordion key={question.id} sx={{color: '#fff', background: '#2d2d2d'}}>
+                <AccordionSummary expandIcon={<ExpandMore sx={{color: '#fff'}} />}>
+                    <Typography variant="h5">{ question.question }</Typography>
                 </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>{ question.answer }</Typography>
+                </AccordionDetails>
             </Accordion>
         );
     });
