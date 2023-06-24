@@ -12,77 +12,77 @@ function FooterLinks(): JSX.Element[] {
         {
             id: 0,
             name: "FAQ",
-            link: "/faq",
+            link: "https://help.netflix.com/support/412",
         },
         {
             id: 1,
             name: "Help Centre",
-            link: "/help",
+            link: "https://help.netflix.com/",
         },
         {
             id: 2,
             name: "Account",
-            link: "/account",
+            link: "https://www.netflix.com/youraccount",
         },
         {
             id: 3,
             name: "Media Centre",
-            link: "/media",
+            link: "https://media.netflix.com/",
         },
         {
             id: 4,
             name: "Investor Relations",
-            link: "/investor",
+            link: "http://ir.netflix.com/",
         },
         {
             id: 5,
             name: "Jobs",
-            link: "/jobs",
+            link: "https://jobs.netflix.com/jobs",
         },
         {
             id: 6,
             name: "Ways to Watch",
-            link: "/ways-to-watch",
+            link: "https://www.netflix.com/watch",
         },
         {
             id: 7,
             name: "Terms of Use",
-            link: "/terms",
+            link: "https://help.netflix.com/legal/termsofuse",
         },
         {
             id: 8,
             name: "Privacy",
-            link: "/privacy",
+            link: "https://help.netflix.com/legal/privacy",
         },
         {
             id: 9,
             name: "Cookie Preferences",
-            link: "/cookies",
+            link: "https://www.netflix.com/in/#",
         },
         {
             id: 10,
             name: "Corporate Information",
-            link: "/corporate",
+            link: "https://help.netflix.com/legal/corpinfo",
         },
         {
             id: 11,
             name: "Contact Us",
-            link: "/contact",
+            link: "https://help.netflix.com/contactus",
         },
         {
             id: 12,
             name: "Speed Test",
-            link: "/speed-test",
+            link: "https://fast.com/",
         },
         {
             id: 13,
             name: "Legal Notices",
-            link: "/legal",
+            link: "https://help.netflix.com/legal/notices",
         },
         {
             id: 14,
             name: "Only on Netflix",
-            link: "/netflix",
+            link: "https://www.netflix.com/in/browse/genre/839338",
         },
     ];
     const links = footerLinks.map((option) => {
