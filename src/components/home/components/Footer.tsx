@@ -105,7 +105,7 @@ function FooterLinks(): JSX.Element[] {
 
 function Footer(): JSX.Element {
     return (
-        <Grid container sx={{marginTop: 1, color: '#fff', background: '#000', minHeight: '100vh'}}>
+        <Grid container sx={{marginTop: 1, paddingLeft: 20, paddingRight: 20, paddingTop: 10, color: '#ccc', background: '#000', minHeight: '100vh'}}>
             <Grid item xs={12}>
                 <Typography>
                     Questions? Call 000-800-919-1694
