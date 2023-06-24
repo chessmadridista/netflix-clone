@@ -15,7 +15,7 @@ function Header(): JSX.Element {
                         height: 40, 
                         marginLeft: '120px' }}
                 />
-                <LanguageOption />
+                <LanguageOption marginLeft={80} />
                 <Link to='/login'>
                     <Button
                         variant="contained"
