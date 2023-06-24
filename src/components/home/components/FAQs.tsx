@@ -1,5 +1,6 @@
 import { ExpandMore } from "@mui/icons-material";
 import { Accordion, AccordionDetails, AccordionSummary, Card, CardContent, CardHeader, Grid, Typography } from "@mui/material";
+import EmailBox from "./EmailBox";
 
 interface Questions {
     id: number;
@@ -63,7 +64,7 @@ function Questions(): JSX.Element[] {
 
 function FAQs(): JSX.Element {
     return (
-        <Grid container sx={{marginTop: 1, background: '#000', color: '#fff', height: '100vh'}}>
+        <Grid container sx={{marginTop: 1, background: '#000', color: '#fff', minHeight: '100vh'}}>
             <Grid item sx={{display: 'flex', justifyItems: 'center'}} xs={12}>
                 <Card sx={{background: '#000', width: '100vw', textAlign: 'center', paddingTop: 6}}>
                     <CardHeader 
@@ -76,8 +77,9 @@ function FAQs(): JSX.Element {
                     } 
                     sx={{color: '#fff', width: '100%'}}
                     />
-                    <CardContent>
+                    <CardContent sx={{color: '#fff'}}>
                         <Questions />
+                        <EmailBox marginTop={5} />
                     </CardContent>
                 </Card>
             </Grid>
