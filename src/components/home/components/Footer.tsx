@@ -87,9 +87,10 @@ function FooterLinks(): JSX.Element[] {
     ];
     const links = footerLinks.map((option) => {
         return (
-            <Grid xs={4}>
+            <Grid xs={4} sx={{marginTop: 1, height: 1}}>
                 <Typography
                     key={option.id}
+                    variant='subtitle2'
                     component='a'
                     href={option.link}
                     sx={{color: '#ccc'}}
@@ -105,17 +106,17 @@ function FooterLinks(): JSX.Element[] {
 
 function Footer(): JSX.Element {
     return (
-        <Grid container sx={{marginTop: 1, paddingLeft: 20, paddingRight: 20, paddingTop: 10, color: '#ccc', background: '#000', minHeight: '100vh'}}>
+        <Grid container sx={{marginTop: 1, paddingLeft: 20, paddingRight: 20, paddingTop: 10, paddingBottom: 10, color: '#ccc', background: '#000', }}>
             <Grid item xs={12}>
-                <Typography>
+                <Typography sx={{marginBottom: 3}}>
                     Questions? Call 000-800-919-1694
                 </Typography>
             </Grid>
             <FooterLinks />
             <Grid xs={12}>
-                <LanguageOption />
+                <LanguageOption marginTop={6} />
             </Grid>
-            <Grid xs={12}>
+            <Grid xs={12} sx={{marginTop: 3}}>
                 <Typography>Netflix India</Typography>
             </Grid>
         </Grid>
