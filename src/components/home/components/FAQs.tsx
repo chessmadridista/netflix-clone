@@ -48,12 +48,12 @@ function Questions(): JSX.Element[] {
     ];
     const questionAccordians = questions.map((question) => {
         return (
-            <Accordion key={question.id} sx={{color: '#fff', background: '#2d2d2d'}}>
+            <Accordion key={question.id} disableGutters sx={{color: '#fff', background: '#2d2d2d', width: '75vw', margin: 'auto', marginTop: 1, padding: 2}}>
                 <AccordionSummary expandIcon={<ExpandMore sx={{color: '#fff'}} />}>
                     <Typography variant="h5">{ question.question }</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>{ question.answer }</Typography>
+                    <Typography variant="body1" sx={{fontSize: 'x-large'}}>{ question.answer }</Typography>
                 </AccordionDetails>
             </Accordion>
         );
