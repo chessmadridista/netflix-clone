@@ -45,8 +45,12 @@ function SigninForm(): JSX.Element {
                             </Typography>
                         </Link>
                     </Grid>
+                    <Grid xs={12}>
+                        <Typography sx={{color: '#ccc'}}>
+                            New to Netflix? <Link to='/' style={{color: '#fff', textDecoration: 'none'}}>Sign up now.</Link>
+                        </Typography>
+                    </Grid>
                 </Grid>
-
             </CardContent>
         </Card>
     );
