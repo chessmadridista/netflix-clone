@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function SigninForm(): JSX.Element {
     return (
         <Card sx={{
-            background: 'rgba(5, 15, 19, 0.8)',
+            background: 'rgba(5, 15, 19, 0.85)',
             color: '#fff',
             position: 'absolute',
             top: '50%',
@@ -48,6 +48,11 @@ function SigninForm(): JSX.Element {
                     <Grid xs={12}>
                         <Typography sx={{color: '#ccc'}}>
                             New to Netflix? <Link to='/' style={{color: '#fff', textDecoration: 'none'}}>Sign up now.</Link>
+                        </Typography>
+                    </Grid>
+                    <Grid xs={12}>
+                        <Typography sx={{color: '#ccc'}}>
+                        This page is protected by Google reCAPTCHA to ensure you're not a bot. <Link to='/' style={{color: '#0045ad', textDecoration: 'none'}}>Learn more.</Link>
                         </Typography>
                     </Grid>
                 </Grid>
