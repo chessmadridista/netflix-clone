@@ -56,13 +56,13 @@ function SigninForm(): JSX.Element {
                             </Typography>
                         </Link>
                     </Grid>
-                    <Grid xs={12}>
+                    <Grid xs={12} sx={{marginTop: 6}}>
                         <Typography sx={{color: '#ccc'}}>
                             New to Netflix? <Link to='/' style={{color: '#fff', textDecoration: 'none'}}>Sign up now.</Link>
                         </Typography>
                     </Grid>
-                    <Grid xs={12}>
-                        <Typography sx={{color: '#ccc'}}>
+                    <Grid xs={12} sx={{marginTop: 1}}>
+                        <Typography sx={{color: '#ccc', fontSize: 'small'}}>
                         This page is protected by Google reCAPTCHA to ensure you're not a bot. <Link to='/' style={{color: '#0045ad', textDecoration: 'none'}}>Learn more.</Link>
                         </Typography>
                     </Grid>
