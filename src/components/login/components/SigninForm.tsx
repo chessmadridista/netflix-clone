@@ -27,8 +27,8 @@ function SigninForm(): JSX.Element {
                 <TextField label='Password' 
                     sx={{marginTop: 2, background: '#fff', color: '#fff', width: '100%'}}
                 />
-                <CardActions>
-                    <Button>Sign In</Button>
+                <CardActions sx={{padding: 0, marginTop: 6}}>
+                    <Button variant="contained" sx={{backgroundColor: 'red', width: '100%'}}>Sign In</Button>
                 </CardActions>
                 <Grid container>
                     <Grid item xs={6}>
