@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function SigninForm(): JSX.Element {
     return (
         <Card sx={{
-            padding: 4,
+            padding: 6,
             width: 400,
             background: 'rgba(15, 15, 15, 0.85)',
             color: '#fff',
@@ -22,10 +22,10 @@ function SigninForm(): JSX.Element {
             />
             <CardContent>
                 <TextField label='Email or phone number' 
-                    sx={{background: '#333333', color: '#fff'}}
+                    sx={{background: '#fff', color: '#fff', width: '100%'}}
                 />
                 <TextField label='Password' 
-                    sx={{background: '#333333', color: '#fff'}}
+                    sx={{marginTop: 2, background: '#fff', color: '#fff', width: '100%'}}
                 />
                 <CardActions>
                     <Button>Sign In</Button>
