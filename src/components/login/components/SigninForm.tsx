@@ -28,7 +28,7 @@ function SigninForm(): JSX.Element {
                     sx={{marginTop: 2, background: '#fff', color: '#fff', width: '100%'}}
                 />
                 <CardActions sx={{padding: 0, marginTop: 6}}>
-                    <Button variant="contained" sx={{backgroundColor: 'red', width: '100%'}}>Sign In</Button>
+                    <Button variant="contained" sx={{backgroundColor: '#e50914', ":hover": {backgroundColor: '#bf0811'}, width: '100%'}}>Sign In</Button>
                 </CardActions>
                 <Grid container>
                     <Grid item xs={6}>
