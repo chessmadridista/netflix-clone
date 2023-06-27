@@ -30,17 +30,26 @@ function SigninForm(): JSX.Element {
                 <CardActions sx={{padding: 0, marginTop: 6}}>
                     <Button variant="contained" sx={{backgroundColor: '#e50914', ":hover": {backgroundColor: '#bf0811'}, width: '100%'}}>Sign In</Button>
                 </CardActions>
-                <Grid container>
+                <Grid container sx={{marginTop: 2}}>
                     <Grid item xs={6}>
                         <FormGroup>
-                            <FormControlLabel control={<Checkbox />} label='Remember me' />
+                            <FormControlLabel control={<Checkbox />} 
+                                label={
+                                    <Typography sx={{fontSize: 'small'}}>Remember me</Typography>
+                                } 
+                            />
                         </FormGroup>
                     </Grid>
                     <Grid item xs={6}>
                         <Link to='/LoginHelp' style={{textDecoration: 'none'}}>
                             <Typography variant="subtitle1"
                                 sx={{
-                                    color: '#fff',
+                                    display: 'flex',
+                                    color: '#ccc',
+                                    height: '100%',
+                                    alignItems: 'center',
+                                    justifyContent: 'flex-end',
+                                    fontSize: 'small'
                             }}
                             >
                                 Need help?
