@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 function SigninForm(): JSX.Element {
     return (
         <Card sx={{
-            background: 'rgba(5, 15, 19, 0.85)',
+            padding: 4,
+            width: 400,
+            background: 'rgba(15, 15, 15, 0.85)',
             color: '#fff',
             position: 'absolute',
             top: '50%',
