@@ -11,7 +11,7 @@ function WhosWatching(): JSX.Element {
             <Grid item xs={12}>
             </Grid>
             <Grid item xs={12}>
-                <Button>
+                <Button sx={{textTransform: 'none'}}>
                     Manage Profiles
                 </Button>
             </Grid>
