@@ -1,17 +1,21 @@
-import { Card, CardHeader, CardMedia } from "@mui/material";
+import { Card, CardHeader, CardMedia, Typography } from "@mui/material";
+import UserProps from "../interfaces/UserProps";
 
-interface User {
-    user: string;
-    src: string;
-}
-
-function User({user, src}: User): JSX.Element {
+function User({id, firstName, imageBackgroundSrc}: UserProps): JSX.Element {
     return (
-        <Card>
+        <Card key={id} sx={{background: '#232323'}}>
             <CardMedia
-            src={src}
+            component="img"
+            height="150px"
+            image={imageBackgroundSrc}
             />
-            <CardHeader>{user}</CardHeader>
+            <CardHeader sx={{color: '#fff'}} 
+                title={
+                    <Typography>
+                        {firstName}
+                    </Typography>
+                } 
+            />
         </Card>
     );
 }
