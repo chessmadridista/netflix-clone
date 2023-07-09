@@ -44,16 +44,16 @@ function WhosWatching(): JSX.Element {
     });
 
     return (
-        <Grid container sx={{height: '100vh', width: '100vw'}}>
-            <Grid item xs={12}>
+        <Grid container sx={{paddingTop: 20, width: '100vw'}}>
+            <Grid item xs={12} sx={{marginBottom: 2, textAlign: 'center'}}>
                 <Typography sx={{color: '#fff'}} variant="h3">
                     Who's watching?
                 </Typography>
             </Grid>
-            <Grid container xs={12} justifyContent='space-around'>
+            <Grid container  justifyContent='space-around' sx={{width: '75vw', textAlign: 'center', margin: 'auto',}}>
                 {userCards}
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={12} sx={{marginTop: 10, textAlign: 'center'}}>
                 <Button 
                 variant="outlined" 
                 sx={{textTransform: 'none', color: '#aaa', borderColor: '#aaa'}}>
