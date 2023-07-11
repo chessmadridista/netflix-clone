@@ -54,11 +54,13 @@ function WhosWatching(): JSX.Element {
                 {userCards}
             </Grid>
             <Grid item xs={12} sx={{marginTop: 10, textAlign: 'center'}}>
-                <Button 
-                variant="outlined" 
-                sx={{textTransform: 'none', color: '#aaa', borderColor: '#aaa', ":hover": {borderColor: '#aaa'}}}>
-                    Manage Profiles
-                </Button>
+                <Link to="/ManageProfiles">
+                    <Button 
+                    variant="outlined" 
+                    sx={{textTransform: 'none', color: '#aaa', borderColor: '#aaa', ":hover": {borderColor: '#aaa'}}}>
+                        Manage Profiles
+                    </Button>
+                </Link>
             </Grid>
         </Grid>
     );
