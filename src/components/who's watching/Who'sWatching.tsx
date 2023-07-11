@@ -1,6 +1,7 @@
 import { Button, Grid, Typography } from "@mui/material";
 import User from "./components/User";
 import UserProps from "./interfaces/UserProps";
+import { Link } from "react-router-dom";
 
 function WhosWatching(): JSX.Element {
     const users: Array<UserProps> = [
@@ -32,14 +33,13 @@ function WhosWatching(): JSX.Element {
     ];
     const userCards: Array<JSX.Element> = users.map((user) => {
         return (
-            <>
-                <User
-                    key={user.id} 
+            <Link key={user.id} to="/library">
+                <User 
                     id={user.id} 
                     firstName={user.firstName} 
                     imageBackgroundSrc={user.imageBackgroundSrc} 
                 />
-            </>
+            </Link>
         );
     });
 
