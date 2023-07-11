@@ -50,7 +50,7 @@ function WhosWatching(): JSX.Element {
                     Who's watching?
                 </Typography>
             </Grid>
-            <Grid container  justifyContent='space-around' sx={{width: '70vw', textAlign: 'center', margin: 'auto',}}>
+            <Grid container justifyContent='space-around' sx={{width: '70vw', textAlign: 'center', margin: 'auto',}}>
                 {userCards}
             </Grid>
             <Grid item xs={12} sx={{marginTop: 10, textAlign: 'center'}}>

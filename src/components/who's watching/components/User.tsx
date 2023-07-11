@@ -8,7 +8,7 @@ function User({id, firstName, imageBackgroundSrc}: UserProps): JSX.Element {
             component="img"
             height="170px"
             image={imageBackgroundSrc}
-            sx={{":hover": {border: '1px solid #fff',}}}
+            sx={{":hover": {border: '2px solid #fff', boxSizing: 'border-box'}}}
             />
             <CardHeader sx={{color: '#fff'}} 
                 title={
