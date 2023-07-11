@@ -56,7 +56,7 @@ function WhosWatching(): JSX.Element {
             <Grid item xs={12} sx={{marginTop: 10, textAlign: 'center'}}>
                 <Button 
                 variant="outlined" 
-                sx={{textTransform: 'none', color: '#aaa', borderColor: '#aaa'}}>
+                sx={{textTransform: 'none', color: '#aaa', borderColor: '#aaa', ":hover": {borderColor: '#aaa'}}}>
                     Manage Profiles
                 </Button>
             </Grid>
